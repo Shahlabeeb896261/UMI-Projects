@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.home {
+    border: 1px solid black;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.admin {
+    border: 1px solid black;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.admin a {
+    text-decoration: none;
+    font-size: 24px;
+}
+main {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+#registrationForm {
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.405), inset -20px -20px 60px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+
+#registrationForm h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#registrationForm p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#registerEmail {
+    width: 85%;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+#registerPassword {
+    width: 85%;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+#registerBtn {
+    width: 85%;
+    background-color: blue;
+    padding: 14px 16px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+#loginForm {
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.405), inset -20px -20px 60px rgba(255, 255, 255, 0.4);
+}
+
+#loginForm h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#loginEmail {
+    width: 85%;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+#loginPassword {
+    width: 85%;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+#loginBtn {
+    width: 85%;
+    background-color: blue;
+    padding: 14px 16px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+#loginForm p {
+    text-align: center;
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+
+#resetPasswordForm {
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.405), inset -20px -20px 60px rgba(255, 255, 255, 0.4);
+}
+
+#resetPasswordForm h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#resetPasswordForm #resetEmail {
+    width: 85%;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+#resetPasswordForm #resetPasswordBtn {
+    width: 85%;
+    background-color: blue;
+    padding: 14px 16px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+#resetPasswordForm p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#sportsEventsManager {
+    width: 620px;
+    background-color: yellow;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    gap: 10px;
+    padding: 20px; /* Add padding for better spacing */
+    max-height: calc(100vh - 40px); /* Adjust height to fit within the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+#eventName {
+    width: 70%;
+    padding: 14px 16px;
+    border-radius: 5px;
+}
+
+#addEventBtn {
+    padding: 14px 44px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#sportsEventsManager h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sportsEventsManager {
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#sportsEventsManager #eventList {
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sportsEventsManager #eventList li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#sportsEventsManager #eventList li button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#signOutBtn {
+    padding: 16px 50px;
+    border-radius: 5px;
+    background-color: green;
+    margin-bottom: 50px;
+}
+
+#updateSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#updateSection #updateEventName {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+#updateEventBtn {
+    width: 130px;
+    padding: 13px 2px;
+    border-radius: 7px;
+}
+
+#updateSection h2 {
+    margin-top: 0px;
+}

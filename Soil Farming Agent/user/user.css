@@ -1,0 +1,171 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* some styling for header */
+header {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Container styling */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for all paragraph present in the user html file */
+p {
+  text-align:  center;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form elements */
+input {
+  display: block;
+  font-size: 17px;
+  padding: 14px 16px;
+  font-weight: 500;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for all buttons available in the user.html file */
+button {
+  padding: 14px 16px;
+  font-size: 17px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* This is the styling for button hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Link styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Anchor hover stylig */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form container styling */
+#registrationForm, #loginForm, #resetPasswordForm {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.4), inset -20px -20px 60px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Content styling after login */
+#loggedInContent {
+  margin-top: 20px;
+}
+
+/* some styling for responsive webpage design */
+@media (max-width: 550px) {
+  #registrationForm,
+  #loginForm,
+  #resetPasswordForm {
+    width: 100%;
+  }
+  input, button {
+    width: 100%;
+  }
+}
+
+/* Styling gor logged in content heading */
+#loggedInContent h3 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Some styling for soil details */
+#viewSoilDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* Some styling for soil details heading */
+#viewSoilDetails h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Styling for soil list */
+#soilList {
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Styling for distributor details */
+#viewDistributorDetails {
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 20px;
+}
+
+/* Styling for distributor details heading */
+#viewDistributorDetails h4 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Some style for distributor list */
+#distributorList {
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 20px;
+  text-align: left;
+}

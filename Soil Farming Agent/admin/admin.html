@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The admin Portal page...">
+  <!-- Title of the webpage -->
+  <title>Admin - Soil Farming Agent</title> 
+  <!-- Linking the css file to the admin page -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- This is the header of the webpage -->
+  <header>
+    <a href="../index.html">Home</a>
+  </header>
+
+  <!-- This is the main container of the webpage -->
+  <main class="container">
+    <h2>Admin Portal</h2>
+
+    <!-- This holds the admin Login portion -->
+    <div id="adminLogin">
+      <h3>Admin Login</h3>
+      <input type="email" id="adminEmail" placeholder="Email">
+      <input type="password" id="adminPassword" placeholder="Password">
+      <button id="loginAdmin">Login</button>
+    </div>
+
+    <!-- This div contains the content of the admin -->
+    <div id="adminContent">
+      <h3>Manage Soil Details</h3>
+      <input type="hidden" id="editSoilId">
+      <input type="text" id="soilType" placeholder="Soil Type">
+      <input type="text" id="soilQuality" placeholder="Quality">
+      <input type="text" id="recommendedCrops" placeholder="Recommended Crops">
+      <button id="addSoilDetail">Add Soil Detail</button>
+      <button id="updateSoilButton">Update Soil Detail</button>
+      <ul id="soilList"></ul>
+
+      <h3>Manage Distributor Details</h3>
+      <input type="hidden" id="editDistributorId">
+      <input type="text" id="distributorName" placeholder="Distributor Name">
+      <input type="text" id="distributorContact" placeholder="Contact">
+      <input type="text" id="distributorLocation" placeholder="Location">
+      <input type="text" id="seedsAvailable" placeholder="Seeds Available">
+      <button id="addDistributorDetail">Add Distributor Detail</button>
+      <button id="updateDistributorButton">Update Distributor Detail</button>
+      <ul id="distributorList"></ul>
+    </div>
+  </main>
+
+  <!-- Importing the script files -->
+  <script type="module" src="../firebase-config.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

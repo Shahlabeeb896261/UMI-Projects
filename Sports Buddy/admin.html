@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <header>
+      <div class="home"><a href="index.html">Home</a></div>
+      <div class="user"><a href="user.html">User</a></div>
+    </header>
+    <main>
+      <!-- Admin Login Form -->
+      <div id="adminLoginForm">
+        <h2>Admin Login</h2>
+        <input type="email" id="adminEmail" placeholder="Admin Email" />
+        <input type="password" id="adminPassword" placeholder="Password" />
+        <button id="adminLoginBtn">Login</button>
+      </div>
+
+      <!-- Admin Panel -->
+      <div id="adminPanel">
+        <button id="signOutAdminBtn">Logout</button>
+
+        <!-- Sports Categories -->
+        <h2>Manage Sports Categories</h2>
+        <input type="text" id="categoryName" placeholder="Category Name" />
+        <button id="addCategoryBtn">Add Category</button>
+        <div id="updateTriggerBtn">
+          <h3>Update Category</h3>
+          <input
+            type="text"
+            id="updateCategoryName"
+            placeholder="New Category Name"
+          />
+          <button id="updateCategoryBtn">Update Category</button>
+        </div>
+        <ul id="categoryList"></ul>
+
+        <!-- Cities -->
+        <h2>Manage Cities</h2>
+        <input type="text" id="cityName" placeholder="City Name" />
+        <button id="addCityBtn">Add City</button>
+        <div id="upCtBtn">
+          <h3>Update City</h3>
+          <input type="text" id="updateCityName" placeholder="New City Name" />
+          <button id="updateCityBtn">Update City</button>
+        </div>
+        <ul id="cityList"></ul>
+
+        <!-- Areas -->
+        <h2>Manage Areas</h2>
+        <input type="text" id="areaName" placeholder="Area Name" />
+        <button id="addAreaBtn">Add Area</button>
+        <div id="upManArBtn">
+          <h3>Update Area</h3>
+          <input type="text" id="updateAreaName" placeholder="New Area Name" />
+          <button id="updateAreaBtn">Update Area</button>
+        </div>
+        <ul id="areaList"></ul>
+      </div>
+    </main>
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="user.css" />
+    <title>Sports Events Manager</title>
+  </head>
+  <body>
+    <header>
+      <div class="home"><a href="index.html">Home</a></div>
+      <div class="admin"><a href="admin.html">Admin</a></div>
+    </header>
+    <main>
+      <!-- Registration Form -->
+      <div id="registrationForm" class="visible">
+        <h2>Register</h2>
+        <input type="email" id="registerEmail" placeholder="Email" />
+        <input type="password" id="registerPassword" placeholder="Password" />
+        <button id="registerBtn">Register</button>
+        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginForm" class="hidden">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button id="loginBtn">Login</button>
+        <p>
+          Forgot your password?
+          <a href="#" id="showResetPassword">Reset Password</a>
+        </p>
+        <p class="mb">
+          Don't have an account? <a href="#" id="showRegister">Register</a>
+        </p>
+      </div>
+
+      <!-- Password Reset Form -->
+      <div id="resetPasswordForm" class="hidden">
+        <h2>Reset Password</h2>
+        <input type="email" id="resetEmail" placeholder="Email" />
+        <button id="resetPasswordBtn">Reset Password</button>
+        <p>
+          Remembered your password?
+          <a href="#" id="showLoginFromReset">Login</a>
+        </p>
+      </div>
+
+      <!-- Sports Events Management -->
+      <div id="sportsEventsManager" class="hidden">
+        <h2>Manage Sports Events</h2>
+        <input type="text" id="eventName" placeholder="Event Name" />
+        <button id="addEventBtn">Add Event</button>
+        <div id="updateSection" class="hidden">
+          <h2>Update Event</h2>
+          <input
+            type="text"
+            id="updateEventName"
+            placeholder="New Event Name"
+          />
+          <button id="updateEventBtn">Update Event</button>
+        </div>
+        <ul id="eventList"></ul>
+        <button id="signOutBtn">Logout</button>
+      </div>
+    </main>
+    <script type="module" src="user.js"></script>
+  </body>
+</html>

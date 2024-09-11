@@ -1,0 +1,155 @@
+/* Giving some defaul Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Container styling */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form elements */
+input {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling Button */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Giving some hover styling to the button */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+}
+
+/* List item styling */
+li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Hidden content */
+#adminContent {
+  margin-top: 20px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Giving some styling to the admin Login heading */
+#adminLogin h3{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+
+/* Some styling for admin Login */
+#adminLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.405), inset -20px -20px 60px rgba(255, 255, 255, 0.405);
+}
+
+/* Some styling for container heading */
+.container h2 {
+  text-align: center;
+}
+
+/* Styling for admin login input field */
+#adminLogin input {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Giving some styling to the edit detail */
+.editDel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Some styling for soil list, list item */
+#soilList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Giving some styling to the distributor list which contains list item */
+#distributorList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Adding some margin from the bottom to distributor details */
+#addDistributorDetail {
+  margin-bottom: 10px;
+}
+
+/* Giving some styling to the heading of admin Content */
+#adminContent h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Giving some margin bottom to the add soil details button */
+#addSoilDetail {
+  margin-bottom: 10px;
+}
+
+/* some style for soil list heading */
+#soilList h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Adding some hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Links styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Adding some hover effect */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form elements */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Some styling for list items */
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Flexbox layout for landing page */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* General text styling */
+p {
+  margin-bottom: 15px;
+}
+
+/* Adding some style for buttons */
+.buttons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
